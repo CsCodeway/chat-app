@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Lemonada&family=Poppins&family=Roboto&display=swap');
+
+// font-family: 'Baloo 2', cursive;
+// font-family: 'Lemonada', cursive;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+$font-baloo: 'Baloo 2', cursive;
+$font-Lemonada: 'Lemonada', cursive;
+$font-Poppins: 'Poppins', sans-serif;
+$font-Roboto: 'Roboto', sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    background-color: #8a8a8a8a;
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 70vh;
+    width: 50%;
+    border-radius: 2rem 2rem 1rem 1rem;
+    background-color: #fff;
+
+    .top {
+        height: 7vh;
+        width: auto;
+        position: relative;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        justify-content: left;
+        align-items: center;
+        display: flex;
+        background-color: #209CEE;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+
+        p {
+            font-family: $font-Lemonada;
+            border-radius: 1rem;
+            color: white;
+            padding: 1rem;
+            font-size: 1.1rem;
+        }
+    }
+
+    .content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .content {
+        height: 53vh;
+        margin-top: 1rem;
+        overflow: auto;
+
+        .right {
+            max-width: 13rem;
+            float: right;
+            clear: both;
+            padding: 0.7rem 1.2rem;
+
+            h3 {
+                font-size: 1rem;
+                font-weight: normal;
+                font-family: $font-baloo;
+                text-align: right;
+            }
+
+            p {
+                color: white;
+                background-color: #50688c;
+                padding: 0.5rem;
+                border-radius: 1rem 0.2rem 1rem 1rem;
+                font-family: $font-Poppins;
+                font-size: 0.8rem;
+                word-wrap: break-word;
+                user-select: text;
+            }
+        }
+
+        .left {
+            max-width: 13rem;
+            float: left;
+            clear: both;
+            padding: 0.7rem 1.2rem;
+
+            h3 {
+                font-size: 1rem;
+                font-weight: normal;
+                font-family: $font-baloo;
+            }
+
+            p {
+                color: white;
+                background-color: #816c93;
+                padding: 0.5rem;
+                border-radius: 0.2rem 1rem 1rem 1rem;
+                font-family: $font-Poppins;
+                font-size: 0.8rem;
+                word-wrap: break-word;
+                user-select: text;
+            }
+        }
+    }
+
+    .bottom-input {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+        .emoji-icon {
+            bottom: 0;
+            align-items: center;
+
+            #emoji-id{
+                cursor: pointer;
+                background-color: rgb(214, 213, 213);
+                margin: 0.2rem;
+                font-size: 1.5rem;
+                border-radius: 1.2rem;
+            }
+
+            #emoji-picker {
+                --background: gray;
+                position: absolute;
+                bottom: 50px;
+                left: 10px;
+                display: none;
+            }
+        }
+
+        textarea {
+            border-radius: 1rem !important;
+            padding: 0.5rem 0.7rem !important;
+            margin: 0.2rem !important;
+            border: 1px solid #5555 !important;
+            outline: none !important;
+            font-size: 0.9rem !important;
+            width: 100% !important;
+            font-family: $font-Poppins !important;
+            resize: none !important;
+            overflow: hidden !important;
+        }
+
+        button {
+            margin: 0.2rem;
+            padding: 0.5rem 1.3rem;
+            border-radius: 1rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: #4fe76b;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 600;
+            font-family: $font-Roboto;
+        }
+    }
+}

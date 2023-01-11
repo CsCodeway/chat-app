@@ -1,0 +1,26 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "This is a ChatApp using Express and Socket.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "ChatApp",
+    "Realtime",
+    "Chat",
+    "Socket.io",
+    "Project"
+  ],
+  "author": "CsCodeway",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jquery.emojiarea.js": "^0.1.8-beta",
+    "socket.io": "^4.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

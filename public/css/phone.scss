@@ -1,0 +1,53 @@
+@media only screen and (max-width:750px) {
+    
+    .container{
+        width: 80%;
+    
+        .top{
+    
+            p{
+                font-size: 0.9rem;
+            }
+        }
+        .content{
+            .right{
+                max-width: 12rem;
+
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+            .left{
+                max-width: 12rem;
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px) {
+    
+    .container{
+    
+        .top{
+    
+            p{
+                font-size: 0.7rem;
+            }
+        }
+        .content{
+            .right{
+
+                p{
+                    font-size: 0.6rem;
+                }
+            }
+            .left{
+                p{
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}

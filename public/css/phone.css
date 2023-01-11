@@ -1,0 +1,31 @@
+@media only screen and (max-width: 750px) {
+  .container {
+    width: 80%;
+  }
+  .container .top p {
+    font-size: 0.9rem;
+  }
+  .container .content .right {
+    max-width: 12rem;
+  }
+  .container .content .right p {
+    font-size: 0.8rem;
+  }
+  .container .content .left {
+    max-width: 12rem;
+  }
+  .container .content .left p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container .top p {
+    font-size: 0.7rem;
+  }
+  .container .content .right p {
+    font-size: 0.6rem;
+  }
+  .container .content .left p {
+    font-size: 0.6rem;
+  }
+}/*# sourceMappingURL=phone.css.map */

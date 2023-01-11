@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp - CsCodeway</title>
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phone.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top">
+            <p>
+                ChatApp - CsCodeway
+            </p>
+        </div>
+        <div class="content"></div>
+        <div class="bottom-input">
+            <div class="emoji-icon">
+                <div id="emoji-id" onclick="myFunction()">&#128522;
+                    <emoji-picker class="dark" id="emoji-picker"></emoji-picker>
+                </div>
+            </div>
+            <textarea rows="1" type="text" id="input" class="input" placeholder="Enter Here"></textarea>
+            <button type="submit" id="btn" class="button">Send</button>
+        </div>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("emoji-picker");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
